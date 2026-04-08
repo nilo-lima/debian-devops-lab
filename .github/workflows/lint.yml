@@ -38,3 +38,6 @@ jobs:
 
       - name: Validate Vagrantfile
         run: vagrant validate
+        env:
+          VAGRANT_DEFAULT_PROVIDER: virtualbox # Apenas para validar a sintaxe
+
