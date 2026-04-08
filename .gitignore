@@ -1,0 +1,63 @@
+# --- Vagrant ---
+.vagrant/
+vagrant-*.log
+
+# --- VirtualBox ---
+*.vbox
+*.vbox-prev
+*.vmdk
+*.vdi
+*.vhd
+*.sav
+
+# --- Logs & Temporários ---
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# --- Python (ignr/httpie/pip) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+build/
+dist/
+*.egg-info/
+
+# --- IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Segurança ---
+# Nunca suba chaves privadas ou arquivos de variáveis sensíveis
+.env
+*.pem
+*.key
+.aws/
+.ssh/
+
+# --- Terraform ---
+# O estado do Terraform pode conter senhas em texto puro
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+.terraform.lock.hcl
+
+# --- Ansible ---
+# Arquivos de variáveis locais que podem conter segredos
+ansible/inventory/local
+*.retry
+
+# --- Kubernetes ---
+# Configurações de acesso ao cluster (podem conter tokens)
+.kube/
+kubeconfig
+kubeconfig.yaml
