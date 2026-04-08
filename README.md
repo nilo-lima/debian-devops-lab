@@ -4,7 +4,8 @@
 [![Vagrant](https://img.shields.io/badge/Tool-Vagrant-1868F2?logo=vagrant&logoColor=white)](https://www.vagrantup.com/)
 [![Docker](https://img.shields.io/badge/Container-Docker-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
 [![AWS](https://img.shields.io/badge/Cloud-AWS%20Ready-FF9900?logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
-[![Lint and Validation](https://github.com/nilo-lima/debian-devops-lab/actions/workflows/lint.yml/badge.svg)](https://github.com/nilo-lima/debian-devops-lab/actions/workflows/lint.yml)
+[![Lint and Validation](https://github.com/nilo-lima/debian-devops-lab/actions/workflows/lint.yml/badge.svg?branch=main)](https://github.com/nilo-lima/debian-devops-lab/actions/workflows/lint.yml)
+
 
 Um ambiente de desenvolvimento e laboratório de infraestrutura **totalmente automatizado**, projetado para engenheiros DevOps e arquitetos de nuvem. Este projeto provisiona uma máquina virtual robusta, "batteries-included", pronta para práticas de **IaC (Infrastructure as Code)**, **Cloud Simulation** e **Container Orchestration**.
 
