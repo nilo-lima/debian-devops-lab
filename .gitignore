@@ -61,3 +61,8 @@ ansible/inventory/local
 .kube/
 kubeconfig
 kubeconfig.yaml
+
+# Projetos específicos
+bia-infra/
+desafios_fundamentais/*
+desafios_preparatorios/*

@@ -39,7 +39,7 @@ Certifique-se de ter o [Vagrant](https://www.vagrantup.com/downloads) e o [Virtu
 ### Provisionamento
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/nilo-lima/debian-devops-lab
+   git clone https://github.com/nilo-lima/debian-devops-lab.git
    cd debian-devops-lab
    ```
 

@@ -64,7 +64,7 @@ vagrant --version
 ## **1\. Clonar o repositório**
 
 ```Bash  
-git clone https://github.com/nilo-lima/debian-devops-lab
+git clone https://github.com/nilo-lima/debian-devops-lab.git
 cd debian-devops-lab
 ```
 

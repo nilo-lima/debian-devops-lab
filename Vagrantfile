@@ -11,20 +11,20 @@ Vagrant.configure("2") do |config|
     config.vbguest.auto_update = false 
   end
   
-  config.vm.define "debian-general" do |general|
-    general.vm.hostname = "devops.domain.local"      
+  config.vm.define "formacao-aws" do |general|
+    general.vm.hostname = "formacao-aws.domain.local"      
 
     # Melhores Práticas: auto_correct evita falhas se a porta 80 estiver ocupada no host
-    general.vm.network "forwarded_port", guest: 80, host: 8080, auto_correct: true
-    general.vm.network "forwarded_port", guest: 443, host: 8443, auto_correct: true
-
+    #general.vm.network "forwarded_port", guest: 80, host: 8080, auto_correct: true
+    #general.vm.network "forwarded_port", guest: 443, host: 8443, auto_correct: true
+    
     # Rede Privada (Host-only)
-    general.vm.network "private_network", ip: "192.168.56.248"
+    general.vm.network "private_network", ip: "192.168.56.250"
 
     general.vm.provider "virtualbox" do |vb|
-      vb.memory = 2048
+      vb.memory = 2048 # 2GB de RAM
       vb.cpus = 2
-      vb.name = "devops"
+      vb.name = "formacao-aws"
       
       # Desabilitar interface gráfica (headless mode)
       vb.gui = false
