@@ -126,9 +126,9 @@ curl -fsSL https://cli.kiro.dev/install | bash
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 
-# LocalStack (Instalação do CLI via Pip)
-# O LocalStack roda no Docker, mas o CLI ajuda a gerenciar o estado
-pip install localstack --break-system-packages
+# Ministack (Instalação do CLI via Pip)
+# O Ministack roda no Docker, mas o CLI ajuda a gerenciar o estado
+pip install ministack --break-system-packages
 
 # Baixar o binário do Kind para testar Kubernetes
 curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.20.0/kind-linux-amd64
