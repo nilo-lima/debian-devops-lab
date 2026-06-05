@@ -17,7 +17,7 @@ Este laboratório consolida as ferramentas líderes de mercado em um único ambi
 
 *   **Infraestrutura como Código:** Terraform & Ansible.
 *   **Containers:** Docker Engine, Docker Compose, `ctop`, `lazydocker` e `kind` (Kubernetes in Docker).
-*   **Ecossistema AWS:** AWS CLI v2, AWS SAM, AWS Session Manager Plugin e `localstack` (Simulador Cloud).
+*   **Ecossistema AWS:** AWS CLI v2, AWS SAM, AWS Session Manager Plugin e `ministack` (Simulador Cloud).
 *   **Networking & Monitoramento:** `nmap`, `tcpdump`, `htop`, `nload`, `iftop` e `httpie`.
 *   **Developer Experience:** Oh My Posh (Prompt customizado para DevOps), Nerd Fonts e GitHub CLI (`gh`).
 

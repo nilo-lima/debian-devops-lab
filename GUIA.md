@@ -12,7 +12,7 @@ Este projeto automatiza a criação de um ambiente de desenvolvimento completo u
 * **Monitoramento de Rede:** `htop`, `nload`, `iftop`, `nmap`, `tcpdump`  
 * **Banco de Dados:** `postgresql-client`
 * **DevOps:** Terrafrom, Ansible, Kubernets, Docker, Lazydocker
-* **AWS:** AWS Cli, AWS SAM, AWS SSM, Kiro-cli, LocalStack
+* **AWS:** AWS Cli, AWS SAM, AWS SSM, Kiro-cli, Ministack
 
 # **📋 Pré-requisitos**
 
@@ -202,7 +202,7 @@ Esta VM foi provisionada com uma stack completa de ferramentas prontas para uso:
 
 * `Ansible:` Ferramenta de automação de TI que utiliza YAML para configurar sistemas, instalar softwares e orquestrar tarefas complexas sem agentes.
 
-* `LocalStack:` Emulador de nuvem que permite rodar serviços da AWS (S3, Lambda, SQS) localmente em containers Docker para testes sem custo.
+* `Ministack:` Emulador de nuvem que permite rodar serviços da AWS (S3, Lambda, SQS) localmente em containers Docker para testes sem custo.
 
 * `ctop:` Monitor de interface de texto (TUI) que exibe métricas de desempenho (CPU, RAM, Rede) de containers Docker em tempo real.
 
@@ -217,8 +217,8 @@ Esta VM foi provisionada com uma stack completa de ferramentas prontas para uso:
 * `Kiro-cli:` Interface de linha de comando para automação de tarefas e gerenciamento de infraestrutura específica em ambientes AWS.
 
 
-### LocalStack (Simulador de AWS Local)
-O LocalStack permite que você rode serviços da AWS (S3, Lambda, DynamoDB, SQS) dentro de containers Docker na sua VM, sem gastar dinheiro na conta real da AWS.
+### Ministack (Simulador de AWS Local)
+O Ministack permite que você rode serviços da AWS (S3, Lambda, DynamoDB, SQS) dentro de containers Docker na sua VM, sem gastar dinheiro na conta real da AWS.
 
 Por que? É a melhor forma de testar scripts de automação e infraestrutura antes de dar o "deploy" na nuvem real.
 
@@ -227,8 +227,8 @@ Como usar? Basta rodar via Docker Compose na sua VM:
 ```YAML
 # exemplo de docker-compose.yml dentro da VM
 services:
-  localstack:
-    image: localstack/localstack
+  ministack:
+    image: ministack/ministack
     ports:
       - "4566:4566"
     environment:
@@ -242,7 +242,7 @@ Com essas ferramentas instaladas, seu fluxo DevOps seguirá esta hierarquia:
 
 - **Desenvolvimento Local:** Use o Docker e o Node.js para criar seus apps.
 
-- **Simulação Cloud:** Use o LocalStack para testar S3 e Lambdas com o AWS SAM sem gastar nada.
+- **Simulação Cloud:** Use o Ministack para testar S3 e Lambdas com o AWS SAM sem gastar nada.
 
 - **Deploy Cloud:** Use o AWS CLI e Kiro-cli para enviar suas aplicações para a AWS real.
 
